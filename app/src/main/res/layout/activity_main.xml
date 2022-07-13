@@ -4,22 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#001E62"
+    android:background="#151B2B"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dalhee BTG!!!  😉"
+        android:fontFamily="@font/fenix"
+        android:text="Nebulosa Carina, está a 7,5 mil anos-luz de distância da Terra!"
+        android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
+        android:textSize="29sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.004" />
+
+    <ImageView
+        android:id="@+id/imageCarina"
+        android:layout_width="463dp"
+        android:layout_height="288dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/main_image_star_forming_region_carina_nircam_final_5mb" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="147dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#242587"
+        android:text="Clique aqui"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="280dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
