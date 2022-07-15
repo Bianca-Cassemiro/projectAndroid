@@ -17,22 +17,16 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="29sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/imageCarina"
-        android:layout_width="463dp"
-        android:layout_height="288dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="498dp"
+        android:layout_height="290dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/main_image_star_forming_region_carina_nircam_final_5mb" />
+
 
     <Button
         android:id="@+id/button"
@@ -40,7 +34,9 @@
         android:layout_height="60dp"
         android:backgroundTint="#242587"
         android:text="Clique aqui"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="280dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageCarina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
